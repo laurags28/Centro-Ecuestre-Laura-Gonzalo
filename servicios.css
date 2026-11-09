@@ -1,0 +1,276 @@
+/* =========================================
+   1. ESTILOS BÁSICOS (Igual que Index)
+   ========================================= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F4F8;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    background-color: #2980B9;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: fit-content;
+    margin: 0 auto 20px auto;
+}
+
+/* Menú de navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #3498DB;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #1A5276;
+}
+
+/* =========================================
+   2. ESTRUCTURA PRINCIPAL (LAYOUT)
+   ========================================= */
+.contenedor-principal {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    align-items: flex-start; /* Alinea todo arriba */
+}
+
+.contenido-central {
+    flex: 3; /* Columna ancha (75%) */
+}
+
+/* Añade esto a tu CSS */
+.contenido-central article p {
+    text-align: justify; /* Justifica el texto */
+    line-height: 1.6;    /* Separa un poco las líneas para que se lea mejor */
+}
+
+.barra-lateral {
+    flex: 1; /* Columna estrecha (25%) */
+    min-width: 280px; /* Un poco más ancha para que quepa la tabla */
+}
+
+/* Títulos de sección */
+h2 {
+    color: #1A5276;
+    border-bottom: 2px solid #3498DB;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Línea separadora */
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 40px 0;
+}
+
+/* =========================================
+   3. GALERÍA DE IMÁGENES (Horizontal)
+   ========================================= */
+.contenedor-imagenes {
+    display: flex;           /* Pone las fotos en fila */
+    justify-content: space-between; /* Las separa equitativamente */
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;         /* Para móviles */
+}
+
+figure {
+    margin: 0;
+    flex: 1;                 /* Todas ocupan el mismo ancho */
+    text-align: center;      /* Centra el texto del pie de foto */
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+figure img {
+    width: 100%;             /* Se adapta al ancho de la figura */
+    height: 180px;           /* Altura fija para que todas sean iguales */
+    object-fit: cover;       /* Recorta la foto sin deformarla */
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1A5276;
+    font-size: 0.9rem;
+}
+
+/* =========================================
+   4. TABLAS (Estilo General)
+   ========================================= */
+/* Esto arregla la tabla grande de servicios */
+.contenedor-tabla {
+    overflow-x: auto; /* Si la tabla es muy ancha, permite scroll lateral */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Quita los espacios dobles entre bordes */
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    vertical-align: top; /* Alinea el texto arriba de la celda */
+}
+
+/* Listas dentro de las tablas (para que no se vean apretadas) */
+td ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+td li {
+    margin-bottom: 5px;
+}
+
+/* =========================================
+   ACTUALIZACIÓN: BARRA LATERAL (TARIFAS)
+   ========================================= */
+.cajita-tarifas {
+    background-color: white;
+    border-top: 5px solid #F39C12;
+    padding: 15px; /* Un poco menos de padding general */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cajita-tarifas h3 {
+    margin-top: 0;
+    color: #F39C12;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Ajustes para que la tabla quepa bien */
+.tabla-precios {
+    width: 100%;        /* Que ocupe todo el ancho disponible */
+    font-size: 0.85rem; /* Letra un pelín más pequeña */
+    border-collapse: collapse;
+}
+
+.tabla-precios th {
+    background-color: #F39C12;
+    color: white;
+    padding: 8px 2px;   /* Padding lateral muy pequeño para ganar espacio */
+    text-align: center;
+}
+
+.tabla-precios .titulo-precio {
+    background-color: #fcf3cf;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+.tabla-precios td {
+    padding: 5px;      /* Reducimos el espacio de las celdas */
+    vertical-align: top;
+    border: 1px solid #eee;
+}
+
+/* ¡ESTO ES LO MÁS IMPORTANTE! */
+.lista-precios {
+    list-style: none;    /* Sin puntos */
+    padding-left: 0;     /* ¡Quitamos el espacio a la izquierda! */
+    margin: 0;
+}
+
+.lista-precios li {
+    margin-bottom: 8px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 4px;
+    
+    /* Esto ayuda a organizar precio y texto si se montan */
+    display: flex;
+    flex-direction: column; /* Pone el precio debajo del texto si no cabe */
+    align-items: center;    /* Centrado */
+    text-align: center;
+}
+
+/* Ponemos el precio en negrita y un poco destacado */
+.lista-precios li b {
+    color: #e67e22;
+    margin-top: 2px;
+}
+
+/* =========================================
+   FOOTER (PIE DE PÁGINA)
+   ========================================= */
+#piedepagina {
+    background-color: #2c3e50;  /* El mismo gris oscuro elegante del index */
+    color: white;               /* Texto en blanco */
+    text-align: center;         /* Todo centrado (texto y mapa) */
+    padding: 40px 20px;         /* Espacio interior para que respire */
+    margin-top: 50px;           /* Separación con el contenido de arriba */
+}
+
+/* Estilo para los párrafos dentro del footer */
+#piedepagina p {
+    margin: 10px 0;             /* Separación entre líneas de texto */
+    font-size: 1rem;
+}
+
+/* Estilo específico para el mapa (iframe) */
+#piedepagina iframe {
+    width: 100%;                /* Se adapta a móviles */
+    max-width: 600px;           /* Pero no se hace gigante en PC */
+    height: 350px;              /* Altura controlada */
+    border-radius: 15px;        /* Bordes redondeados */
+    margin-top: 20px;           /* Espacio encima del mapa */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Sombra para darle profundidad */
+}
+
+/* Estilo para el enlace de "Volver al inicio" */
+#piedepagina a {
+    color: #3498DB;             /* Azul brillante para que destaque sobre el gris */
+    text-decoration: none;      /* Sin subrayado */
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#piedepagina a:hover {
+    color: #5DADE2;             /* Un azul más clarito al pasar el ratón */
+    text-decoration: underline;
+}

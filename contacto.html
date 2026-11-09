@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Contacto</title>
+        <link rel="shortcut icon" href="Multimedia/logofavicon.png" type="image/png">
+        <link rel="stylesheet" href="contacto.css">
+    </head>
+    <body>
+        <header>
+            <h1>Centro Ecuestre Laura Gonzalo</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_blank">Volver a la página principal</a></li>
+                    <li><a href="servicios.html" target="_blank">Servicios</a></li>
+                    <li><a href="instalaciones.html" target="_blank">Instalaciones</a></li>
+                    <li><a href="#piedepagina">Ir al pie de página</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenedor-principal">
+
+            <main class="contenido-central">
+                
+                <section>
+                    <article class="intro-contacto">
+                        <h2>Ponte en contacto con nosotros</h2>
+                        <p>
+                            Sabemos que buscas lo mejor para tu rendimiento y el de tu caballo.
+                            Cuéntanos tus objetivos deportivos o qué estás buscando en un servicio de pupilaje.
+                            Nuestro equipo técnico analizará tus necesidades y te propondrá un plan a medida.
+                        </p>
+                    </article>
+
+                    <article class="contenedor-formulario">
+                        <form method="post" action="#"> <fieldset>
+                                <legend>Datos personales</legend>
+                                
+                                <div class="campo">
+                                    <label for="nombre">Nombre:</label>
+                                    <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+                                </div>
+
+                                <div class="campo">
+                                    <label for="apellido">Apellidos:</label>
+                                    <input type="text" name="apellido" id="apellido" placeholder="Tus apellidos" required>
+                                </div>
+
+                                <div class="campo">
+                                    <label for="email">Correo electrónico:</label>
+                                    <input type="email" name="email" id="email" required placeholder="ejemplo@correo.com">
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>¿Qué necesitas?</legend>
+                                <div class="grupo-checkbox">
+                                    <label><input type="checkbox" name="info"> Información general</label>
+                                    <label><input type="checkbox" name="escuela"> Escuela de equitación</label>
+                                    <label><input type="checkbox" name="pupilaje"> Pupilaje</label>
+                                    <label><input type="checkbox" name="competicion"> Tecnificación competición</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Un poco más sobre ti</legend>
+                                <label for="infoplus">¿Hay algo más que quieras contarnos?</label>
+                                <textarea name="infoplus" id="infoplus" rows="5" placeholder="Escribe aquí tu consulta..."></textarea>
+                            </fieldset>
+
+                            <div class="botones-form">
+                                <input type="submit" value="Enviar Formulario" class="btn-enviar">
+                                <input type="reset" value="Borrar datos" class="btn-borrar">
+                            </div>
+
+                        </form>
+                    </article>
+                </section>
+            </main>
+
+            <aside class="barra-lateral">
+                
+                <div class="cajita-contacto">
+                    <h3></h3>Contacto Rápido</h3>
+                    <p>Si prefieres llamarnos o escribirnos directamente:</p>
+                    <ul>
+                        <li><b>Tlf:</b> 968 111 111</li>
+                        <li><b>Email:</b> info@lauragonzalo.com</li>
+                        <li><b>Horario de oficina:</b><br>L-V de 9:00 a 14:00</li>
+                    </ul>
+                </div>
+
+                <div class="cajita-normas-link">
+                    <h3>Normativa</h3>
+                    <p>Consulta aquí la normativa de seguridad y uso del centro:</p>
+                    <a href="https://www.hipicalascadenas.com" target="_blank" class="enlace-normas">
+                        <img src="Multimedia/icono-normas-flaticon.png" alt="Descargar Normas">
+                        <span>Ver Normas de Régimen Interno</span>
+                    </a>
+                </div>
+
+            </aside>
+
+        </div> <footer id="piedepagina">
+            <p>El Centro Ecuestre Laura Gonzalo se reserva los derechos de admisión a cualquier usuario que infrinja las normas de convivencia y/o de seguridad.</p>
+            <p>Localización: Av. de los Jerónimos, 135</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25157.416345769663!2d-1.1829247999999999!3d37.9846656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6380384e21bc4d%3A0x6f8f4ea9f358e209!2sUniversidad%20Cat%C3%B3lica%20San%20Antonio%20de%20Murcia%20(UCAM)!5e0!3m2!1ses!2ses!4v1764157958851!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <br> <br><a href="#top">Volver al inicio de la página</a>
+        </footer>
+    </body>
+</html>
